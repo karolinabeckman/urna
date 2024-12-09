@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@urna/auth": "*",
 		"@urna/core": "*",
 		"react": "^18",
 		"react-dom": "^18",

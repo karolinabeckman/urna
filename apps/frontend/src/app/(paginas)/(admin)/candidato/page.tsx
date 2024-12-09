@@ -1,4 +1,5 @@
 "use client";
+import ForcarUsuarioLogado from "@/components/auth/ForcarUsuarioLogado";
 import FormularioCandidato from "@/components/candidato/FormularioCandidato";
 import ListaCandidatos from "@/components/candidato/ListaCandidatos";
 import candidatosIniciais from "@/data/constants/candidatos";
@@ -34,7 +35,7 @@ export default function PaginaCandidato() {
 	// }
 
 	return (
-		<div>
+		<ForcarUsuarioLogado>
 			{/* <div className="flex justify-between mb-4">
 				<button className="botao azul">Novo Candidato</button>
 				<button className="botao vermelho" onClick={excluirPrimeiroCandidato}>
@@ -62,6 +63,6 @@ export default function PaginaCandidato() {
 					/>
 				</div>
 			)}
-		</div>
+		</ForcarUsuarioLogado>
 	);
 }
