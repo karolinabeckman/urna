@@ -1,3 +1,9 @@
+import ForcarUsuarioLogado from "@/components/auth/ForcarUsuarioLogado";
+
 export default function PaginaEleitor() {
-	return <div>Pagina Eleitor</div>;
+	return (
+		<ForcarUsuarioLogado>
+			<div>Pagina Eleitor</div>
+		</ForcarUsuarioLogado>
+	);
 }
