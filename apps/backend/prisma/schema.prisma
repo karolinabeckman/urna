@@ -10,6 +10,15 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+model Usuario {
+  id    Int    @id @default(autoincrement())
+  nome  String
+  email String @unique
+  senha String
+
+  @@map("usuarios")
+}
+
 model Candidato {
   id        Int    @id @default(autoincrement())
   numero    Int    @unique
